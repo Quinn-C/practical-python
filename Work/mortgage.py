@@ -16,6 +16,8 @@ while principal > 0:
     else:
         principal = principal * (1+rate/12) - payment
         total_paid = total_paid + payment
+    if principal < 0:
+        break
 
 print('Total paid', total_paid)
 
